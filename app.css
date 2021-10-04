@@ -122,3 +122,13 @@ p {
 .submit3 a {
     color: hsl(179, 100%, 13%);
 }
+
+@media (min-width: 800px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 740px;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+}
