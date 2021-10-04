@@ -106,9 +106,15 @@ p {
 .submit a:visited {
     text-decoration: none;
     background-color: hsl(0, 0%, 95%);
+    border: 2px solid white;
     border-radius: 2em;
     padding: 1em 2em;
     font-size: 1.2rem;
+}
+
+.submit a:hover {
+    background:none;
+    color: white;
 }
 
 .submit1 a {
