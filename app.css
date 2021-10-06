@@ -111,10 +111,12 @@ a {
     cursor: pointer;
 }
 
-.change {
+.change,
+:visited {
     text-decoration: underline;
     font-weight: 900;
     flex-shrink: 1;
+    color: hsl(245, 75%, 52%);
 }
 
 .change:hover {
