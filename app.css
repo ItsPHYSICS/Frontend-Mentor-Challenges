@@ -25,7 +25,7 @@ html {
     font-size: 62.5%;
 }
 
-body {
+main {
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -137,4 +137,8 @@ a {
     .card {
         max-width: 280px;
     }
+}
+
+.footer {
+    font-size: 1.2rem;
 }
