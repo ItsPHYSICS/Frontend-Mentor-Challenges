@@ -1,0 +1,113 @@
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+
+## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 250px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 1em;
+    overflow: hidden;
+    margin: 1rem 3rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 1.8em;
+}
+
+.hero {
+    width: 100%;
+    min-height: 30vh;
+    background: linear-gradient(rgba(170, 92, 219, 0.35),rgba(170, 92, 219, 0.35)) , url("images/image-header-mobile.jpg") no-repeat center/cover;
+}
+
+.purple {
+    color: hsl(277, 64%, 61%);
+}
+
+.light {
+    color:hsla(0, 0%, 100%, 0.75); 
+}
+
+.content h1 {
+    margin-bottom: .5em;
+}
+
+.perks {
+    margin-bottom: .7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perks > div {
+    padding: .6em .5em;
+}
+
+/* fluid typography*/
+
+@media screen and (min-width: 800px) {
+    .hero {
+        background:  linear-gradient(rgba(170, 92, 219, 0.35),rgba(170, 92, 219, 0.35)), url("images/image-header-desktop.jpg") no-repeat center/ cover;
+        min-height: 43vh;
+    }
+
+    .wrapper > div{
+        width: 50%;
+        display: inline-block;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 40vh;
+        max-width: 80vw;
+    }
+    .perks {
+        flex-direction: row;
+    }
+    .hero + div .container {
+        width: 90%;
+    }
+}
